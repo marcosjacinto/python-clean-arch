@@ -11,3 +11,8 @@ def test_set_task_as_done():
     task.set_as_done()
     assert task.is_done == True
 
+def test_set_task_as_undone():
+    task = Task('title', 'description')
+    task.set_as_done()
+    task.set_as_undone()
+    assert task.is_done == False
