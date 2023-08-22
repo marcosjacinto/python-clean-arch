@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "py-clean-arch"
+version = "0.1.0"
+description = ""
+authors = ["marcos <marcos.gomesjacinto@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
