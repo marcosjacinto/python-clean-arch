@@ -15,6 +15,7 @@ class Task:
 
 @dataclass
 class TodoList:
+    name: str = 'default'
     tasks: t.List[Task] = field(default_factory=list)
 
     def add_task(self, task: Task):
