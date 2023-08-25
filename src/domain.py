@@ -16,6 +16,7 @@ class Task:
 
 @dataclass
 class TodoList:
+    id: int
     name: str = 'default'
     tasks: t.List[Task] = field(default_factory=list)
 
