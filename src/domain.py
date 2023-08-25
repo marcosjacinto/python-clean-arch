@@ -6,6 +6,7 @@ class Task:
     title: str
     description: str
     is_done: bool = False
+    todo_list_id: t.Optional[int] = None
 
     def set_as_done(self):
         self.is_done = True

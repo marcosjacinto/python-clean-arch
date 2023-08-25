@@ -1,10 +1,11 @@
 from src.domain import Task, TodoList
 
 def test_task_is_created_with_correct_attributes():
-    task = Task('title', 'description')
+    task = Task('title', 'description', is_done=False, todo_list_id=1)
     assert task.title == 'title'
     assert task.description == 'description'
     assert task.is_done == False
+    assert task.todo_list_id == 1
 
 def test_set_task_as_done():
     task = Task('title', 'description')
